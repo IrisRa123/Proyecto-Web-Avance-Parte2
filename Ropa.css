@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+html {
+	font-size: 80%;
+	font-family: 'Poppins', sans-serif;
+}
+
+
+/* Encabezado de la pagina*/
+
+header {
+  background-color: #0abb9d; /* Color de fondo del encabezado */
+  text-align: center; /* Centra el texto del encabezado */
+  padding: 5px; /* Ajusta el relleno según sea necesario */
+  margin-bottom: 30px; /* Agrega espacio entre el encabezado y la imagen */
+}
+
+h1 {
+  font-size: 23px; /* Ajusta el tamaño del texto del encabezado */
+}
+
+/*******************************************/
+/* Formato para las imagenes del contenido */
+/*******************************************/
+
+/* Estilo para cada tarjeta */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 300px; /* Ancho ajustado para acomodar 4 tarjetas en una fila */
+  height: 350px; /* Alto ajustado */
+  background-color: #e8e9e3; /* Color de fondo de la tarjeta */
+  overflow: hidden; /* Asegura que el icono no salga fuera de la tarjeta */
+  margin: 15px; /* Margen entre las tarjetas */
+  float: left; /* Alinea las tarjetas en una fila */
+  position: relative; /* Permite centrar la imagen */
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+  text-align: center; /* Centra el título y la descripción */
+}
+
+.card-img-container {
+  position: relative; /* Asegura que la imagen y las estrellas se posicionen en relación con este contenedor */
+}
+
+.card-img {
+  width: 100%;  /* Ajusta el ancho de la imagen al contenedor */
+  height: auto; /* Mantiene la relación de aspecto de la imagen */
+  display: block;
+}
+
+.container-start {
+  position: absolute; /* Ajusta la posición de las estrellas */
+  bottom: 10px; /* Posiciona las estrellas en la parte inferior */
+  width: 100%; /* Ajusta el ancho al 100% para centrar las estrellas */
+  text-align: center; /* Centra las estrellas */
+}
+
+.container-start .start {
+  color: #067d81;
+  display: flex; /* Asegura que los iconos de las estrellas se muestren */
+  justify-content: center; /* Centra los iconos de las estrellas horizontalmente */
+}
+
+.container-start .start i {
+  font-size: 15px;
+  color: #09a5a5; /* Color del contorno de las estrellas (negro) */
+  padding: 2px; /* Añade un poco de espacio alrededor de las estrellas */
+  margin: 5px; /* Añade margen entre las estrellas */
+}
+
+.image-container {
+  position: relative;
+  text-align: center;
+}
+
+.image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: white; /* Color del texto */
+  font-size: 30px; /* Tamaño del texto */
+}
+
+.tarjeta:hover .icon {
+  display: flex; /* Muestra los íconos cuando pones el cursor sobre la tarjeta */
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  right: 0; /* Posiciona los íconos en el lado derecho */
+  transform: translate(0, -50%); /* Centra verticalmente los íconos */
+  z-index: 1;
+  color: rgb(9, 146, 156); /* Color de los íconos */
+  font-size: 20px; /* Tamaño de los íconos */
+  display: none; /* Oculta los íconos por defecto */
+  flex-direction: column; /* Asegura que los íconos se muestren en una columna vertical */
+  justify-content: space-between; /* Distribuye los íconos uniformemente a lo largo de la columna */
+}
+
+.icon i {
+  margin: 10px 0; /* Añade un margen de 10px arriba y abajo de cada ícono */
+  border-radius: 50%; /* Hace que el marco sea circular */
+  border-style: solid; /* Define el estilo del marco */
+  border-width: 3px; /* Define el ancho del marco */
+  padding: 5px; /* Añade un relleno de 10px alrededor de cada ícono */
+}
+
+.icon i:hover {
+  color: rgb(208, 70, 212); /* Cambia el color de los íconos a blanco cuando pones el cursor sobre ellos */
+}
+
+.card:hover .icon {
+  display: flex; /* Muestra los íconos al poner el cursor sobre la tarjeta */
+}
+
+.price span {
+  margin-left: 5px;
+  text-decoration: line-through;
+}
+ 
+.card {
+  position: relative; /* Posiciona el icono de WhatsApp en relación con la tarjeta */
+}
+
+.whatsapp-container {
+  position: absolute;
+  margin: 15px 0; /* Añade un margen de 10px arriba y abajo de cada ícono */
+  bottom: 30px; /* Posiciona el icono de WhatsApp en la parte inferior */
+  left: 20px; /* Ajusta la posición horizontal del icono de WhatsApp a la derecha */
+  font-size: 24px; /* Aumenta el tamaño del ícono */
+  border-radius: 70%; /* Hace que el marco sea circular */
+  border-style: solid; /* Define el estilo del marco */
+  border-width: 1px; /* Define el ancho del marco */
+  padding: 5px; /* Añade un relleno de 10px alrededor de cada ícono */
+}
+
+.whatsapp-container:active {
+  color: rgb(7, 113, 145); /* Cambia el color del ícono a blanco al seleccionarlo */
+}
+
+.card-img {
+  width: auto;  /* Mantiene el ancho original de la imagen */
+  height: auto; /* Mantiene la altura original de la imagen */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
